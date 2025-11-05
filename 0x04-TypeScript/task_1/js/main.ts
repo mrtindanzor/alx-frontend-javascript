@@ -6,7 +6,7 @@ interface Teacher {
   location: string
 } 
 
-interface Directors extends Teacher {
+interface Director extends Teacher {
   numberOfReports: number
 }
 
