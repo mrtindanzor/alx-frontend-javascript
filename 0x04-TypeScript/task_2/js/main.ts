@@ -55,5 +55,7 @@ export const executeWork = (employee: TeacherInterface | DirectorInterface) => {
 }
 
 export const teachClass: TeachClassFunction = (todayClass:Subjects ) => {
-  return `Teaching ${todayClass}`
+  if (todayClass === 'History') return 'Teaching Math'
+
+  return 'Teaching History'
 }
