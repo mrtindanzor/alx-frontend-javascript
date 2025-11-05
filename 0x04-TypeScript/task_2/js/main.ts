@@ -8,7 +8,7 @@ interface TeacherInterface {
   getCoffeeBreak(): string
   workTeacherTasks(): string 
 }
-type createEmployeeFunction = (salary: string | number) => TeacherInterface  | DirectorInterface 
+type createEmployeeFunction = (salary: number) => TeacherInterface  | DirectorInterface 
 type Subjects = "Math" | "History"
 type TeachClassFunction = (subject: Subjects) => string
 
