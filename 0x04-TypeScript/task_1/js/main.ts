@@ -19,11 +19,11 @@ const printTeaction: printTeacherFunction = (firstName, lastName) => {
 interface StudentClassType {
   firstName: string
   lastName: string
-  workOnHomeWork(): string
+  workOnHomework(): string
   displayName(): string
 }
 
-class StudentClass implements StudentClassType{
+class StudentClass {
   firstName: string
   lastName: string
 
@@ -32,11 +32,11 @@ class StudentClass implements StudentClassType{
     this.lastName = lastname
   }
   
-  workOnHomeWork(){
+  workOnHomework(): string{
     return `Currently working`
   }
 
-  displayName(){
+  displayName(): string{
     return this.firstName
   }
 }
