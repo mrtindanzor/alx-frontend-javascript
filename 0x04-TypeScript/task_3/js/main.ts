@@ -10,10 +10,11 @@ const row: RowElement = {
 
 const newRowID: RowID = CRUD.insertRow(row)
 
-CRUD.updateRow(newRowID, {
+const updatedRow: RowElement = {
   firstName: "Micheal",
-  lastName: "Angelo",
-  age: 23
-})
+  lastName: "Angelo"
+}
+
+CRUD.updateRow(newRowID, {...updatedRow, age: 23})
 
 CRUD.deleteRow(newRowID)
