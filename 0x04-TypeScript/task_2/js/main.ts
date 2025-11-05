@@ -54,6 +54,6 @@ export const executeWork = (employee: TeacherInterface | DirectorInterface) => {
   return employee.workTeacherTasks()
 }
 
-export const teachClass: TeachClassFunction = (todayClass ) => {
+export const teachClass: TeachClassFunction = (todayClass:Subjects ) => {
   return `Teaching ${todayClass}`
 }
